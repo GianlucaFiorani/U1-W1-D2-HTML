@@ -9,7 +9,7 @@
         margin: 0;
       }
       h2 {
-        color: blueviolet;
+        color: rgb(63, 11, 253);
         margin: 0;
         text-align: center;
       }
@@ -17,17 +17,33 @@
   </head>
   <body>
     <header>
-      <img width="150" src="assets/img/logo.svg" />
-      <p></p>
+      <div id="intestazione">
+      <h3 style="background-color: rgb(153, 197, 247);"> <img width="150" src="assets/img/logo.svg" /> <a href=""> -- Home</a><a href=""> -- Articoli</a><a href="" > -- Lavora con noi --</a></h3>
+      <div>
       <h2>Come creare un template per i post</h2>
       <h2>di Mario Rossi - pubblicato il 25-10-2020</h2>
-      <p></p>
+      </div>
     </header>
     <main>
+        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+        <h3>Le varie aree saranno quindi suddivise in:</h3>
+           <ul>
+            <li>Contenuto di intestazione del tag &lt;header&gt;</li>
+            <li>Contenuti centrali variabili del tag &lt;main&gt;</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+            </ul>
+            <h3>Formattazione del codice</h3>
+            <p> Il testo del articolo dovra essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+            <ol>
+              <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+              <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+              <li>Applicare gli stili CSS</li>
+            </ol>
+            <p>L'applicazione di siti CSS è cresciuta neglianni fino a raggiungere la diffusione pressochè totale.</p>
 <section>
         <table>
         <caption>
-          Diffusione dei CSS
+          <h3>Diffusione dei CSS</h3>
         </caption>
        <thead>
          <tr>
@@ -67,12 +83,18 @@
 </section>
 <section>
     <p>Un test di validazione potrà essere fatto tramite il <a href=""> tool online </a>dedicato allo scopo. Una volta ottimizato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro: </p>
-</section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sOnsyLAXfSI?si=NyaUT6_lueRwvrLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Vuoi rimanere aggiornato su altre novità del blog? Scrivi alla nostra newsletter:</p>
+    <form>
+    <input type="email" placeholder="Inserisci e-mail">
+    <button type="submit">Invia</button> 
+  </form>
+  </section>
     </main>
-    <footer>
-      <h6>Blog Epicode</h>
+    <footer style="margin-top: 2cm;">
+      <h6>Blog Epicode &copy;</h>
       <h6>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Lugi Einaudi 2 - Milano. P.IVA 00112233.</h6>
-      <a href="info@epicode.school"><h6>info@epicode.school</h6></a>
+      <a href="mailto:info@epicode.school"><h6>info@epicode.school</h6></a>
     </footer>
   </body>
 </html>
